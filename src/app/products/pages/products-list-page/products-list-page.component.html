@@ -1,0 +1,31 @@
+<h1>Items For Sale</h1>
+
+<p>
+  Please take your pick from any of the items below. Shop Smart, shop Z smart?
+</p>
+<div class="catalog">
+  <div *ngFor="let item of inventory" class="card">
+    <app-inventory-card
+      [imageUrl]="item.imageUrl"      
+      [name]="item.name"
+      [price]="item.price"
+    ></app-inventory-card>
+  </div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of inventory">
+    <tr>
+      <td>{{ item.name }}</td>
+      <td>{{ item.price }}</td>
+      <td>{{ item.description }}</td>
+    </tr>
+  </tbody>
+</table>

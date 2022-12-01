@@ -1,0 +1,12 @@
+.image {
+    width:10vw;
+}
+
+p {
+    margin: 0;
+}
+
+.card {
+    width:10vw;
+    border: .01px solid lightgray;
+}

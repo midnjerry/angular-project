@@ -13,6 +13,7 @@ const routes: Routes = [
     component: HomePageComponent
   },
   { path: 'careers', loadChildren: () => import('./careers/careers.module').then(m => m.CareersModule) },
+  { path: 'products', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule) },
   {
     path: '**', pathMatch: 'full',
     component: NotFoundPageComponent

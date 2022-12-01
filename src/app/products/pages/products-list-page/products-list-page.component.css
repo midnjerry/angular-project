@@ -1,0 +1,10 @@
+.catalog {
+    display: flex;
+    align-content: flex-start;
+    padding: 2px;
+}
+.card {
+    margin: 2px;
+    padding: 2px;
+    width: auto;
+}
